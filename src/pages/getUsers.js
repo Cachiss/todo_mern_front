@@ -67,6 +67,11 @@ function GetUsers() {
         />
         <h1>Usuarios desde MongoDB</h1>
       </div>
+
+      <div className="mt-3">
+        <button type="button" className="btn btn-primary" onClick={()=> window.location.href='/register'}>Nuevo usuario</button>
+      </div>
+
       <div className="table-responsive mt-3">
         <table className="table">
           <thead className="thead-dark text-center">

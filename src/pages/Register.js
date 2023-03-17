@@ -22,7 +22,7 @@ function Register() {
     })
     .then((res) => {
       console.log(res);
-      navigate("/login");
+      navigate("/users");
 
     })
     .catch((err) => {
@@ -37,6 +37,7 @@ function Register() {
         sx={{
           bgcolor: "#f5f5f5",
         }}
+        className="mt-5"
       >
 			<Box
           component="form"
@@ -73,13 +74,6 @@ function Register() {
             type="password"
             margin="normal"
           />
-          <TextField
-            fullWidth
-            label="Celular"
-            onChange={(e) => setUser({...user, phone: e.target.value})}
-            type="text"
-            margin="normal"
-          />
           <Button
             variant="contained"
             type="submit"
@@ -96,24 +90,8 @@ function Register() {
               },
             }}
           >
-            Iniciar sesión
+            Registrar usuario
           </Button>
-					{ /* olvide mi contraseña*/}
-					<Typography
-						variant="body2"
-						align="center"
-						sx={{
-							mt: 2,
-							color: "#3f51b5",
-							cursor: "pointer",
-							"&:hover": {
-								color: "#3f51b5",
-								opacity: 0.9,
-							},
-						}}
-					>
-						¿Olvidaste tu contraseña?
-					</Typography>
         </Box>
 			</Container>
     </>
