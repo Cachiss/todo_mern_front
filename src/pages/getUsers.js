@@ -69,12 +69,12 @@ function GetUsers() {
       </div>
 
       <div className="mt-3">
-        <button type="button" className="btn btn-primary" onClick={()=> window.location.href='/register'}>Nuevo usuario</button>
+        <button type="button" className="btn btn-primary bg-success" onClick={()=> window.location.href='/register'}>Nuevo usuario</button>
       </div>
 
       <div className="table-responsive mt-3">
         <table className="table">
-          <thead className="thead-dark text-center">
+          <thead className="thead-warning text-center">
             <tr>
               <th scope="col">_id</th>
               <th scope="col">Nombre</th>
